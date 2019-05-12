@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Cp1252">
+<title>Registration</title>
+  <script src="../libraries/js/jquery-3.1.0.js" type="text/javascript"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script>
+	$(document).ready(function(){
+		var firstName = $("#firstNameText").val();
+		var lastName = $("#lastNameText").val();
+		var userName = $("#userNameText").val();
+		var password = $("#passwordText").val();
+		
+	});
+
+	function validate(){
+		console.log(firstName);
+	}
+  </script>
+</head>
+<body>
+	<div id="content" align="center">
+	<form action="" method="post" onsubmit="validate()">
+		<table>
+			<tr><td align="right">Enter First Name:</td><td><input type="text" id="firstNameText"></td></tr>
+			<tr><td align="right">Enter Last Name:</td><td><input type="text" id="lastNameText"></td></tr>
+			<tr><td align="right">Enter User Name:</td><td><input type="text" id="userNameText"></td></tr>
+			<tr><td align="right">Enter Password:</td><td><input type="password" id="passwordText"></td></tr>
+			<tr><td align="right"><input type="submit" name="Submit" value="submit"></td><td><input type="reset" value="reset"></td></tr>
+		</table>
+	</form>	
+	</div>
+</body>
+</html>

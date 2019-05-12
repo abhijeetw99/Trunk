@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test 2 Angular JS</title>
+	<script src="angular1.6.js"></script>
+	<script type="text/javascript">
+		var app = angular.module( 'myApp', [] );
+		app.controller('myCtrl', function($scope){
+			$scope.firstName = 'Enter name already';
+		});
+	</script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl" ng-init="names=['john','sansa','arya']">
+		Enter Name:<input type="text" name="name" ng-model="firstName"/><br>
+		Name:{{firstName}}
+		<br>
+		<p><input type="text" ng-model="test"></p><br>
+		<ul>
+			<li ng-repeat="y in names|filter:test">
+				{{y}}
+			</li>	
+		</ul>
+
+	</div>
+</body>
+</html>

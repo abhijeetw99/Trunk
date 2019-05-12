@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+</head>
+<body>
+<center>Welcome
+<table>
+  <tr>
+    <td><a href="maincontroller/registration">Registration</a></td>
+  </tr>
+    <tr>
+    <td><a href="maincontroller/login">Login</a></td>
+  </tr>
+</table>
+</center>
+
+</body>
+</html>

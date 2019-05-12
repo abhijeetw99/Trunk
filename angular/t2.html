@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular JS1</title>
+	<script src="angular1.6.js"></script>
+	<script>
+		var app = angular.module('MyApp',[]);
+		app.controller('MyCtrl', function($scope){
+			$scope.fullName = 'fgdhfghfghgh';
+		})
+	</script>
+
+</head>
+<body>
+	<div ng-app="MyApp" ng-controller = "MyCtrl">
+		First Name:<input type="text" name="firstName" ng-model="firstName"><br/>
+		Last Name:<input type="text" name="lastName" ng-model="lastName"><br/>
+		Full Name:<div ng-bind="fullName"></div>
+	</div>
+</body>
+</html>

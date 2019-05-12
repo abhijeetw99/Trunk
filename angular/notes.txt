@@ -1,0 +1,30 @@
+application
+model 
+bind
+controller - ng-controller ->controls the application
+directive - ng-app,ng-model,ng-bind,ng-init,ng-controller,ng-expression
+expression
+modules - ng app
+
+
+Angular JS
+
+Directives
+->ng-app - Defines Angular JS application
+->ng-model - binds HTML input element to angular JS application variables.
+->ng-bind - binds angular JS application variables to HTML view.
+->ng-init - initializes angular JS variables
+->ng-controller - controls the angular JS Application
+
+Scopes
+->Root scope - variables present in div with ng-app directive
+->current scope - variables present in other div without ng-app directive.
+->If a variable has the same name in both the current scope and in the rootScope, the application uses the one in the current scope.
+
+Filters
+->Used to format application variable data ex. format dates,currencies
+ {{ lastName | uppercase }}
+
+
+Routing -
+->routes your application to different pages without reloading the entire application.

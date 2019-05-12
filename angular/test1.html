@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test1</title>
+</head>
+<script src="angular1.6.js"></script>
+<script>
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope){
+		$scope.firstName = 'john';
+		$scope.lastName = 'snow';
+	});
+</script>
+<body>
+	<div ng-app='myApp' ng-controller='myCtrl' ng-init="names = ['john','danny','sansa']">
+		Your name:{{firstName+' '+lastName}}<br>
+		<ul>
+			<li ng-repeat="y in names">
+				{{y}}
+			</li>
+		</ul>
+
+	</div>
+</body>
+</html>

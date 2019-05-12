@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+</head>
+<script src="angular1.6.js"></script>
+<script>
+	var app = angular.module("myShoppingList", []);
+	app.controller("myCtrl", function($scope){
+		$scope.cartElements1 = ["milk","soap","tea","coffee"];
+	});
+</script>
+<body>
+	<div ng-app="myShoppingList" ng-ctrl="myCtrl">
+		<ul>
+
+			<li ng-repeat="x in cartElements1">{{x}}</li>
+
+		</ul>	
+		
+	</div>
+</body>
+</html>

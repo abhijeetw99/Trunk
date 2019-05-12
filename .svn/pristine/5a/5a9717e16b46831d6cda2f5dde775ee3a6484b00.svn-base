@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Cp1252">
+<title>Registration</title>
+  <script src="application/libraries/js/jquery-3.1.0.js"></script>
+  <script>
+  	alert("hi");
+  </script>
+</head>
+
+</html>
