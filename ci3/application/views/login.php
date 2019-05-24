@@ -6,6 +6,13 @@ echo 'base url='.base_url();
 <html>
 <head>
 	<title>Login</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+
 	<script type="text/javascript" src="<?= base_url() ?>/application/libraries/js/jquery-3.1.1.js"></script>
 	
 	<script>
@@ -38,9 +45,11 @@ echo 'base url='.base_url();
 	</script>
 </head>
 <body>
-<center>
-<h2>Login</h2>
-	<div id="error-msg">
+
+<div class="container">
+
+	<h2 class="text-center">Login</h2>
+	<div id="error-msg" class="alert alert-danger fade in">
 		<?php if( true == valStr( $strErrorMessage ) ) { 
 				echo $strErrorMessage; 
 				}
@@ -48,19 +57,19 @@ echo 'base url='.base_url();
 		
 	</div>
 
-	<form action="authenticate" method="post" onsubmit="return validate();">
-		<table>
-			<tr>
-				<td>Username:</td><td><input type="text" name="username" id="uname"></td>
-			</tr>
-			<tr>	
-				<td>Password:</td><td><input type="password" name="password" id="pwd"></td>
-			</tr>
-			<tr>	
-				<td><input type="submit" name="Login" value="Login"></td><td><input type="reset" name="Reset"></td>
-			</tr>
-		</table>
-	</form>
-</center>
+
+		<form action="authenticate" method="post" onsubmit="return validate();">
+			<div class="form-group w-25">
+					<label for="uname">Username:</label>
+					<input class="form-control" type="text" name="username" id="uname">
+
+					<label for="pwd">Password:</label>
+					<input class="form-control" type="password" name="password" id="pwd">
+
+					<td class="text-right"><input class="btn" type="submit" name="Login" value="Login"></td><td><input class="btn" type="reset" name="Reset"></td>
+			</div>		
+
+		</form>
+	</div>
 </body>
 </html>
