@@ -5,3 +5,9 @@
 </ul>
 <h3>{{button}}</h3>
 <input type="button" (click) = "onClick()" value="Click Me"/>
+<div>
+    <ul *ngfor = "user of users">
+        <li>{{user.name}}</li>
+        <li>{{user.rollno}}</li>
+    </ul>
+</div>

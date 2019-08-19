@@ -11,6 +11,7 @@ export class UserComponent implements OnInit {
   name:string;
   animes:string[];
   button:string;
+  users = [];
 
   constructor( private dataService:DataService ) { 
     console.log('user component constructor');
@@ -20,6 +21,7 @@ export class UserComponent implements OnInit {
     this.name = 'neo';
     this.animes = ['OPM', 'SAO'];
     this.button = "Not Clicked";
+    this.users = this.dataService.getUsers();
   }
 
   onClick() {
